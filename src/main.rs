@@ -9,6 +9,7 @@ use std::io;
 use std::io::Error;
 use std::thread;
 
+//a change
 fn read_character() -> io::Result<char> {
     // Read a single character from stdin
     let mut input = String::new();
