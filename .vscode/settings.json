@@ -4,6 +4,7 @@
     "termion"
   ],
   "rust-analyzer.linkedProjects": [
+    ".\\Cargo.toml",
     ".\\Cargo.toml"
   ]
 }
