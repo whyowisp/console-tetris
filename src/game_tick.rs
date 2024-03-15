@@ -9,7 +9,7 @@ use std::{
     time::Duration,
 };
 
-pub fn draw() -> io::Result<()> {
+pub fn game_tick() -> io::Result<()> {
     let mut stdout = io::stdout();
     loop {
         stdout.execute(terminal::Clear(terminal::ClearType::All))?;
