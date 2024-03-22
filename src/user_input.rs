@@ -11,6 +11,10 @@ pub fn read_character() -> io::Result<char> {
         if modifiers == KeyModifiers::NONE {
             match code {
                 KeyCode::Char(c) => return Ok(c),
+                KeyCode::Up => {
+                    // Handle up arrow key
+                    return Ok('u'); // Return 'u' for up
+                }
                 _ => {
                     return Err(io::Error::new(
                         io::ErrorKind::InvalidInput,
